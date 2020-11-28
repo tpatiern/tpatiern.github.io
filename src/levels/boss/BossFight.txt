@@ -1,0 +1,13 @@
+#misc
+area, 4
+size, 20, 540
+spawn, 246, 189, 1
+special, 12
+name, BOSS
+music, 8
+#blocks
+4000; 0, -1000; -60, O
+4000; 0, -1000; -60, O
+#spikes
+#b1
+#b2

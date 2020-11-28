@@ -1,0 +1,10 @@
+#misc
+size, 1000, 20000
+spawn, 0, 0, 0
+special, 12
+music, 7
+nopause
+#blocks
+4000; 0, -1000; -60, O
+4000; 0, -1000; -60, O
+#spikes

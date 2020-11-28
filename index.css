@@ -1,0 +1,242 @@
+#canvasContainer {
+    position: relative;
+    height: 100vh;
+    /*height: 640px; /* canvas height */
+}
+
+#gameCanvas {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+#inventory {
+    position: absolute;
+    /*left: 960px; /* canvas width */
+    top: 0;
+    width: 240px;
+    height: 100%;
+    overflow: scroll;
+    font-family: Munro;
+    font-size: 200%;
+    color: white;
+    /* border: 2px solid black; */
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: gray;
+    z-index: 1000;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    overflow-x: hidden;
+}
+
+#inventory.hidden {
+    display: none;
+}
+
+#inventory > p {
+    margin: 0 0 10px 0;
+}
+
+#inventory-select {
+    position: relative;
+}
+
+#inventory-select > * {
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid black;
+    width: 54px;
+    height: 54px;
+    box-sizing: border-box;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+#inventory-select > *:hover {
+    background-color: darkgray;
+}
+
+#inventory #btn-keys > img {
+    width: 40px;
+} 
+#inventory #btn-mittens > p {
+    font-size: 115%;
+    width: 100%;
+    margin: 0 0 0 1px;
+}
+#inventory #btn-chais > img {
+    width: 22px;
+    position: relative;
+    /* left: 9px; */
+    top: 5px;
+}
+
+#inv-panels {
+    height: 210px;
+    margin-top: 15px;
+}
+
+#inv-panels > .hidden {
+    display: none;
+}
+
+#panel-keys > div, #panel-chais > div {
+    position: relative;
+    height: 32px;
+}
+
+#panel-keys > div.not-found, #panel-chais > div.not-found {
+    opacity: 0.3;
+}
+
+#panel-keys > div > *, #panel-chais > div > * {
+    display: inline-block;
+    position: absolute;
+}
+
+#panel-keys > div > img {
+    width: 20px;
+    height: 20px;
+    left: 38px;
+    top: 4px;
+}
+#panel-keys > div > p {
+    margin: 0;
+    font-size: 80%;
+    left: 23px;
+}
+
+#panel-keys > div > .keys-found {
+    font-family: MunroSmall;
+    left: 71px;
+    top: -2px;
+}
+
+#panel-mittens, #panel-chais {
+    /*fixes weird whitespace glitch when switching between inventory views*/
+    background-color: gray;
+}
+
+#mittens-box {
+    display: inline-block;
+    border: 1px solid black;
+}
+
+#mittens-box > div {
+    height: 15px;
+}
+
+#mittens-box > div > div {
+    display: inline-block;
+    vertical-align: top;
+    width: 15px;
+    height: 15px;
+}
+
+#mittens-count {
+    position: relative;
+    top: -10px;
+    margin: 0;
+}
+
+#panel-chais > div > img {
+    width: 16px;
+    height: 22px;
+    left: 62px;
+    top: 4px;
+}
+
+#panel-chais > div > p {
+    margin: 0;
+    font-size: 80%;
+    left: 85px;
+    width: 60px;
+    text-align: right;
+}
+
+.btn-div {
+    font-family: MunroSmall;
+    border: 2px solid black;
+    margin-top: 30px;
+    padding: 2px 0;
+    box-sizing: border-box;
+    height: 50px;
+    color: white;
+    background-color: gray;
+    cursor: pointer;
+}
+.btn-div:hover {
+    background-color: darkgray;
+}
+
+#controls > div > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#controls > div > p {
+    margin: 5px 0;
+    text-align: left;
+    color: black;
+    width: 80px;
+}
+
+#controls > div > div {
+    color: white;
+    font-size: 50%;
+    width: 60px;
+    height: 35px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 6px 0;
+    cursor: pointer;
+}
+
+#controls > div > div:hover {
+    background-color: darkgray;
+}
+
+/* super temp stuff*/
+.buttons {
+    position: absolute;
+    top: 660px;
+}
+
+#pause-btn {
+    position: absolute;
+    top: 10px;
+    left: 3px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    display: none; /* Initially hidden */
+}
+
+@font-face {
+    font-family: 'Munro';
+    src: url('./assets/fonts/munro.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MunroSmall';
+    src: url('./assets/fonts/munro_small.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MunroNarrow';
+    src: url('./assets/fonts/munro_narrow.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
